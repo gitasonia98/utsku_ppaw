@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Games</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+   <!-- <h1 class="text-center">Hello, world!</h1>-->
+
+   <!--jumboron(untuk tampilin informasi layar besar)-->
+  <div class ="jumbotron text-center">
+    <img src="img/logo.png" class="img-circle">
+    <h1> Kahoot – Kuis</h1>
+    <!--<p>Web Developer | Desaigner </p>-->
+    </div>
+   <!--akhir jumroton -->
+
+   <!--about (row /kolom untuk about)--> 
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class=" col-sm-12">
+          <h2  class ="text-center">ABOUT</h2> 
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class=" col-sm-4 col-sm-offset-2"> <!--kolom ke 1 bagian kiri-->
+          <p>Kahoot memiliki 4 fitur: game, kuis, diskusi dan survey. Untuk game, kita bisa membuat jenis pertanyaan, dan menentukan jawaban yang paling tepat serta waktu yang digunakan untuk menjawab pertanyaan tersebut. Uniknya, jawaban nantinya akan diwakili oleh gambar dan warna. Peserta diminta memilih warna/gambar yang mewakili jawaban.
+ </p>
+        
+      </div>
+    <div class=" col-sm-4 "> <!--kolom ke 2 bagian kanan-->
+       <h1>
+         </h1>
+    </div>
+  
+  </section>
+   <!--akhir about-->
+
+   <section class="Image" id="Image">
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-12 text-center">
+          <h2>Image</h2>
+          <hr> <!--untuk garis bawah-->
+         </div>
+       </div>
+
+       <div class="row">
+
+        <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/1.png">
+          </a>
+           </div>
+
+          <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/2.jpg">
+          </a>
+        </div>
+
+        <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/3.jpg">
+          </a>
+        </div>
+
+       <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/4.jpg">
+          </a>
+           </div>
+
+      <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/5.jpg">
+          </a>
+           </div>
+
+      <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/6.jpg">
+          </a>
+           </div>
+
+          
+      <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="control-label">Name</label>
+          <input type="text" name="name" id="name" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">NIM</label>
+          <input type="text" name="nim" id="nim" class="form-control">
+        </div>
+        <button class="btn btn-success" id="submit">SUBMIT</button>
+        <button class="btn btn-danger" id="reset">RESET</button>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="control-label">Result :</label>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+   crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#submit").click(function () {
+        let name = $("#name").val();
+        let nim = $("#nim").val();
+
+        let message = "Halo My Name Is " + name + " My NIM : " + nim;
+        console.log(message);
+        $("#result").show();
+        $("#result").html(message);
+      });
+
+      $("#reset").click(function () {
+        $("#result").hide();
+      });
+    });
+  </script>
+
+
+           <!--footer-->
+    <div class="container">
+    <div class="row">
+     <div class="col-sm-12">
+      <p> coppyright 2018 | built <i class="glyphicon glyphicon-user"></i> by Team_PPAW</p>
+    </div>
+    </div>
+            <!--footer-->
+
+      </div>
+
+   </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
