@@ -54,3 +54,120 @@
    <!--akhir about-->
 
 
+   <section class="Image" id="Image">
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-12 text-center">
+          <h2>Image</h2>
+          <hr> <!--untuk garis bawah-->
+         </div>
+       </div>
+
+       <div class="row">
+
+        <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/1.png">
+          </a>
+           </div>
+
+          <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/2.jpg">
+          </a>
+        </div>
+
+        <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/3.jpg">
+          </a>
+        </div>
+
+       <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/4.jpg">
+          </a>
+           </div>
+
+      <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/5.jpg">
+          </a>
+           </div>
+
+      <div class="col-sm-4">
+          <a href="" class="thumbnail">
+          <img src="img/6.jpg">
+          </a>
+           </div>
+
+         <h1>Login</h1>       
+      <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="control-label">Name</label>
+          <input type="text" name="name" id="name" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">password</label>
+          <input type="text" name="password" id="password" class="form-control">
+        </div>
+        <button class="btn btn-success" id="submit">SUBMIT</button>
+        <button class="btn btn-danger" id="reset">RESET</button>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="control-label">Result :</label>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+   crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#submit").click(function () {
+        let name = $("#name").val();
+        let password = $("#password").val();
+
+        let message = "Halo My Name Is " + name + " Password : " + password;
+        console.log(message);
+        $("#result").show();
+        $("#result").html(message);
+      });
+
+      $("#reset").click(function () {
+        $("#result").hide();
+      });
+    });
+  </script>
+
+
+           <!--footer-->
+    <div class="container">
+    <div class="row">
+     <div class="col-sm-12">
+      <p> coppyright 2018 | built <i class="glyphicon glyphicon-user"></i> by Team_PPAW</p>
+    </div>
+    </div>
+            <!--footer-->
+
+      </div>
+
+   </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
