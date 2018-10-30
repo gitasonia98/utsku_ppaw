@@ -21,11 +21,34 @@
   <body>
 
    <!-- <h1 class="text-center">Hello, world!</h1>-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">KoploWeb</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Apaan ya</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="registrasi.html"><span class="glyphicon glyphicon-user"></span> Daftar </a></li>
+      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+	  
+    </ul>
+	    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</nav> 
 
 <!--jumboron(untuk menampilin informasi layar besar)-->
   <div class ="jumbotron text-center">
     <img src="img/logo.png">
-    <h1> Kahoot – Kuis</h1>
+    <h1> Kuiz Koplo</h1>
     </div>
    <!--akhir jumroton -->
 
@@ -42,12 +65,13 @@
 
       <div class="row">
         <div class=" col-sm-4 col-sm-offset-2"> <!--kolom ke 1 bagian kiri-->
-          <p>Kahoot memiliki 4 fitur: game, kuis, diskusi dan survey. Untuk game, kita bisa membuat jenis pertanyaan, dan menentukan jawaban yang paling tepat serta waktu yang digunakan untuk menjawab pertanyaan tersebut. Uniknya, jawaban nantinya akan diwakili oleh gambar dan warna. Peserta diminta memilih warna/gambar yang mewakili jawaban.
+          <p>Koplo quiz adalah quiz paling gak jelas sedunia bahkan sejagat semesta, disini kamu akan bingung dengan kuiz yang disajikan dan disini kamu akan mencoba berfikir berkali-kali untuk menjawabnya kamu harus konsentrasi penuh dan jangan sampai berkedip.
  </p>
         
       </div>
     <div class=" col-sm-4 "> <!--kolom ke 2 bagian kanan-->
-      <p>Dalam game Kuis Logika, kita akan bertemu dengan teka-teki yang membutuhkan daya pikir yang cukup tinggi. Kita akan berhadapan dengan sekumpulan pertanyaan yang terdapat twist di dalam kalimatnya hingga berbagai tebakan berbasis matematika. Intinya, wawasan serta ketelitian kita akan sangat diperlukan untuk memainkan game ini.</p>
+      <p>Disini juga terdapat artikel-artikel menarik yang sulit dibaca bahkan orang yang buta pun sulit membacanya, oleh karena itu kamu harus yakin apa yang kamu baca agar tidak tahu apa yang kamu baca. kamu cukup mengklik artikel-artikel pada gambar dihalaman pertama. pesan saya jagan baca sambil merem!.
+	  </p>
     </div>
   
   </section>
@@ -58,7 +82,7 @@
      <div class="container">
        <div class="row">
          <div class="col-sm-12 text-center">
-          <h2>Image</h2>
+          <h2>ARTIKEL GAK JELAS</h2>
           <hr> <!--untuk garis bawah-->
          </div>
        </div>
@@ -101,73 +125,6 @@
           </a>
            </div>
 
-         <h1>Login</h1>       
-      <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="form-group">
-          <label class="control-label">Name</label>
-          <input type="text" name="name" id="name" class="form-control">
-        </div>
-
-        <div class="form-group">
-          <label class="control-label">password</label>
-          <input type="text" name="password" id="password" class="form-control">
-        </div>
-        <button class="btn btn-success" id="submit">SUBMIT</button>
-        <button class="btn btn-danger" id="reset">RESET</button>
-      </div>
-
-      <div class="col-md-6">
-        <div class="form-group">
-          <label class="control-label">Result :</label>
-          <div id="result"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-   crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-   crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-   crossorigin="anonymous"></script>
-
-  <script>
-    $(document).ready(function () {
-      $("#submit").click(function () {
-        let name = $("#name").val();
-        let password = $("#password").val();
-
-        let message = "Halo My Name Is " + name + " Password : " + password;
-        console.log(message);
-        $("#result").show();
-        $("#result").html(message);
-      });
-
-      $("#reset").click(function () {
-        $("#result").hide();
-      });
-    });
-  </script>
-
-
-           <!--footer-->
-    <div class="container">
-    <div class="row">
-     <div class="col-sm-12">
-      <p> coppyright 2018 | built <i class="glyphicon glyphicon-user"></i> by Team_PPAW</p>
-    </div>
-    </div>
-            <!--footer-->
-
-      </div>
-
-   </section>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+	
   </body>
 </html>
